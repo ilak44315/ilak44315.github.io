@@ -78,12 +78,11 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 background-color: bisque;
+width: 100%;
 }
 .project {
 flex: row;
 width: 20%;
-margin: 10px;
-padding: 10px;
 border: 1px solid #ccc;
 border-radius: 5px;
 }
@@ -142,28 +141,7 @@ button a {
 /* 
 =================================Responsive design==================================== */
 
-/* Media query for mobile devices */
-@media only screen and (max-width: 500px) {
 
-    body {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    /* Example: Stack elements vertically in mobile */
-    .container {
-        flex-direction: column;
-    }
-    .project-container {
-        flex-direction: column;
-    }
-    .img{
-     max-width: 100%;
-    }
-    nav ul{
-        padding: 0;
-    }
-}
 
 /* Media query for tablet devices */
 @media only screen and  (max-width: 1024px) {
@@ -178,7 +156,29 @@ button a {
     .project-container {
         flex-direction: row;
     }
-    .project img{
-     max-height: 150px;
+
+    /* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+        line-height: 1.5;
     }
+
+    .container {
+        flex-direction: column;
+    }
+    .project-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .project{
+        width: 100%;
+    }
+    
+    nav ul{
+        padding: 0;
+    }
+}
+}
 
