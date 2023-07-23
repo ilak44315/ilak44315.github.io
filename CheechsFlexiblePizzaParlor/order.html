@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheechs Flexible Pizza</title>
+    <!--Author: Kali Campbell
+    Date: 7/9/2023
+    Project: Cheechs Flexible Pizza Parlor-->
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="screenStyle.css" media="screen">
+    <script src="https://kit.fontawesome.com/292103325a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li>Our Location</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Create a form to take a customer's order. Include at the minimum: -->
+
+    <!-- TWO COLUMNS: USE FLEXBOXES to create the columns. NO CREDIT WILL BE GIVEN FOR FLOATED COLUMNS. Floating isn't a good tool for columns, which is why we are learning flexboxes!
+
+Column 1:
+Customer First Name
+Customer Last Name
+Customer Phone
+Drop down box with 6 pizza choices
+A drop down (or input type="number") for the number of pizzas to order.
+Include a submit button, although your form does not need to submit to the thank you page unless you want the practice-->
+
+    <div class="formContainer">
+        <div class="formColumn">
+            <fieldset>
+                <legend>Place Your Order Here! </legend>
+                <label for="fname">
+                    First Name:
+                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name">
+                </label>
+                <br>
+                <label for="lname">Last Name:
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                </label>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <input type="text" class="form-control" id="inputState">
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                <br>
+                <!--Phone Number-->
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="custnumber" id="phone" placeholder="Phone Number">
+            </fieldset>
+            <fieldset>
+                <label for="pzzTp1">Pizza Type:</label>
+                <select name="pzzTp1" id="pzzTp1">
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="Cheese">Cheese</option>
+                    <option value="meatLover">Meat Lover</option>
+                    <option value="veggie">Veggie</option>
+                    <option value="supreme">Supreme</option>
+                    <option value="sausage">Sausage</option>
+                </select>
+                <label for="qtycount1">Qty</label>
+                <select name="qtycount1" id="qtycount1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <br>
+                <label for="pzzTp2">Pizza Type:</label>
+                <select name="pzzTp2" id="pzzTp2">
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="Cheese">Cheese</option>
+                    <option value="meatLover">Meat Lover</option>
+                    <option value="veggie">Veggie</option>
+                    <option value="supreme">Supreme</option>
+                    <option value="sausage">Sausage</option>
+                </select>
+                <label for="qtycount2">Qty</label>
+                <select name="qtycount2" id="qtycount2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <br>
+                <label for="pzzTp3">Pizza Type:</label>
+                <select name="pzzTp3" id="pzzTp3">
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="Cheese">Cheese</option>
+                    <option value="meatLover">Meat Lover</option>
+                    <option value="veggie">Veggie</option>
+                    <option value="supreme">Supreme</option>
+                    <option value="sausage">Sausage</option>
+                </select>
+                <label for="qtycount3">Qty</label>
+                <select name="qtycount3" id="qtycount3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </fieldset>
+            <input type="submit" class="submit" value="Submit">
+        </div>
+        <!-- Column 2: -->
+        <!-- Customer Testimonial
+    Social Media links
+    Whatever you deem extra to fill the space and make it look polished and balanced
+    These two columns should stack when the viewport is less than 578 px  -->
+        <div class="formColumn">
+            <fieldset>
+                <legend>Leave us a Testimonial</legend>
+                <textarea placeholder="How did we do?" name="addInfo"></textarea>
+            </fieldset>
+            <input type="submit" class="submit" value="Submit">
+
+        <h3>Follow us on Social Media</h3>
+        <div class="social-links">
+            <a href="https://www.facebook.com/howardslakesidegeneralstore"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/howardsgeneral"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/howardslakesidegeneralstore/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        Kali Campbell &#169;2023
+    </footer>
+</body>
+
+</html>

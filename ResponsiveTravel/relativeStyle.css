@@ -1,0 +1,16 @@
+/**Author: Kali Campbell
+    Date: 6/29/2023
+    Topic: Responsive Trave; **/
+
+@media screen and (max-width: 520px){
+    section{width: 100%;}
+    }
+    
+
+@media screen and (max-width:900px ) {
+    p{font-size: .9rem;}
+    section.tours { width: 44%; height: 560px;}
+    section.setup{ float: left; width: 44%; height: 560px}
+    section.itineraries{width:95%;}
+    section.itineraries img{ height: 400px;}
+    }

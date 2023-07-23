@@ -1,0 +1,48 @@
+
+
+
+/* These two columns should stack when the viewport is less than 578 px  */
+@media screen and (max-width:578px) {
+    
+    .formColumn{
+        float: none;
+        width: 100%;
+    }
+    .formContainer{
+        display: block;
+        text-align: left;
+    }
+    .container{
+        display: inline-block;
+        margin: auto;
+        border-style: double;
+        border-color: red;
+        border-radius: 5px;
+        width: 100%;
+        padding-top: 5px;
+      }
+
+      .pizzatypes{
+        display: block;
+      }
+}
+
+
+
+/* Menu: When the viewport is less than 568pixels, the images/descriptions should stack on top of each other */
+/* Nav :When the viewport shrinks below 568px, the flexboxes (navigation items) will become stacked on top of each other.  */
+@media screen and (max-width:568px){
+
+    nav>ul{
+        text-align: center;
+    }
+
+    nav>ul>li{
+        display: flex;
+        flex: column;
+        width: 100%;
+    }
+
+
+}
+    

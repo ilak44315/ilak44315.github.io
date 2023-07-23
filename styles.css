@@ -1,0 +1,184 @@
+
+header{
+    position:relative;
+    top: 10px;
+}
+
+nav ul{
+    display: grid;
+    grid-gap: 20px;
+    list-style-type: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav a{
+    background-color: lightgrey;
+    display: block;
+    text-decoration: none;
+    padding: .4rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow:lightgray;
+}
+
+nav a:hover {
+    background: var(--light);
+    color: var(--dark);
+    text-decoration: none;
+    padding: .10rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+footer{
+    margin-top: 2em;
+    background: var(--light);
+    color:var(--dark);
+    text-align:center;
+    padding: 1rem;
+    font-size: 20px;}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: rgb(241, 172, 172);
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    border-bottom: 1px solid #ccc;
+}
+
+h2.title{
+    text-align: center;
+}
+h3 {
+    margin-top: 10px;
+}
+.page-link {
+    display: block;
+    margin-bottom: 5px;
+    color: #007BFF;
+    text-decoration: none;
+}
+.profile-picture{
+display: block;
+margin: 0 auto;
+max-width: 200px;
+border-radius: 50%;
+}
+.project-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+background-color: bisque;
+}
+.project {
+flex: row;
+width: 20%;
+margin: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+/* Style for the button */
+button {
+    background-color: lightgray;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Add a hover effect for the button */
+button :hover {
+    background-color: grey;
+}
+
+/* Adjust button width to fit the text */
+button a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+/* Flexbox container to arrange left and right sides */
+.container {
+    display: flex;
+
+}
+
+/* Style for the left side (Web Development Experience) */
+.left-side {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style for the right side (Contact Form) */
+.right-side {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.fill-width {
+    flex: 1;
+    width: 100%;
+}
+
+/* 
+=================================Responsive design==================================== */
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 500px) {
+
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Example: Stack elements vertically in mobile */
+    .container {
+        flex-direction: column;
+    }
+    .project-container {
+        flex-direction: column;
+    }
+    .img{
+     max-width: 100%;
+    }
+    nav ul{
+        padding: 0;
+    }
+}
+
+/* Media query for tablet devices */
+@media only screen and  (max-width: 1024px) {
+
+
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Example: Adjust the container layout for tablets */
+    .project-container {
+        flex-direction: row;
+    }
+    .project img{
+     max-height: 150px;
+    }
+

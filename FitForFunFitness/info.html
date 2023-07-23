@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advising Appointment</title>
+        <!-- AUTHOR: KALI CAMPBELL
+        DATE: 6/21/23
+        PROJECT: Fit For Fun Fitness
+        HTML Valid/Get Complete-->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <img src="Fit.png" alt="Fit for fun logo">
+        <h1>Fit For Fun Fitness</h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="info.html">Request Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="containerInfo">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fname">
+                    Name:
+                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name">
+                </label>
+                <label for="lname">Last Name:
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                </label>
+                <label for="email"> Email:
+                    <input type="email" name="email" id="email" required placeholder="email address">
+                </label>
+        <!--Phone Number-->
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="custnumber" id="phone">        
+
+                <label for="reach">Best way to reach you:</label>
+                <select name="Cntct" id="reach">
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="tetmsg">Text Message</option>
+                    <option value="owl">Owl</option>
+                </select>
+            <!-- 2 radio buttons, (am or pm) give them the same name-->
+                <div class="radio">
+                    <label for="am">AM
+                        <input type="radio" name="ampm" id="am" value="am">
+                    </label>
+                    <label for="pm">PM
+                        <input type="radio" name="ampm" id="pm" value="pm">
+                    </label>
+                </div>
+            </fieldset>
+            <!-- Classes of interest-->
+        <fieldset>
+                <legend>Classes Interested In:</legend>
+                <div class="checkbox">
+                    <label for="crsTrain">Cross Training
+                        <input type="checkbox" name="crsTain" id="crsTrain" value="yes">
+                    </label>
+                    <label for="sprt">Sprint
+                        <input type="checkbox" name="sprt" id="sprt" value="yes">
+                    </label>
+                    <label for="bdyPump">Body Pump
+                        <input type="checkbox" name="bdyPump" id="bdyPump" value="yes">
+                    </label>
+                    <label for="advCrsTrain">Advanced Cross Train
+                        <input type="checkbox" name="advCrsTrain" id="advCrsTrain" value="yes">
+                    </label>
+                    <label for="mxxFit">MixxedFit
+                        <input type="checkbox" name="mxxFit" id="mxxFit" value="yes">
+                    </label>
+                    <label for="spn">Spin
+                        <input type="checkbox" name="spn" id="spn" value="yes">
+                    </label>
+                    <label for="bdyCombat">Body Combat
+                        <input type="checkbox" name="bdyCombat" id="bdyCombat" value="yes">
+                    </label>
+                    <label for="stpIntv">Step Interval
+                        <input type="checkbox" name="stpIntv" id="stpIntv" value="yes">
+                    </label>
+                    <label for="zmba">Zumba
+                        <input type="checkbox" name="zmba" id="zmba" value="yes">
+                    </label>
+                </div>
+            </fieldset>
+
+            <!--1 text area- a special kind of text box that allows user to enter in rows and columns-->
+            <fieldset>
+                <legend>Additional Info</legend>
+                    <textarea placeholder="Any additional info?" name="addInfo"></textarea>
+            </fieldset>
+            <!-- A submit button that sends the for data to a new page. thank you page should display-->
+            <input type="submit" class="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        Kali Campbell  &#169;2023
+    </footer>
+
+
+</body>
+
+</html>

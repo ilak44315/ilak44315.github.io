@@ -1,0 +1,89 @@
+/* Author: Kali Campbell
+    Date: 7/9/2023
+    Project: Cheechs Flexible Pizza Parlor */
+
+    /* Navigation:    
+    They must use flexboxes to display in blocks alongside each other.
+  */
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(204, 73, 73);
+}
+header{
+
+  font-size: 20px; 
+  width: 100%;
+}
+
+nav{
+  flex-direction: row;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+nav>ul{
+text-align: center;
+  padding: 0;
+}
+
+nav>ul>li{
+  display:inline-flex;
+  background-color: #f2f2f2;
+  border-radius:3px;
+  margin:5px;
+  text-align: center;
+
+}
+nav>ul>li a{
+  text-decoration: none;
+
+}
+p{
+  padding:3px;
+  text-align: left;
+}
+.formContainer{
+  display: flex;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color:  #f2f2f2;
+}
+.formColumn{
+  float: left;
+  width: 50%;
+  height: 100%;
+ 
+}
+.img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pizzatypes{
+  display: inline-flex;
+  background-color: lightgray;
+  text-align: center;
+}
+
+.section{
+  width: 50%;
+  padding:20px;
+  margin-bottom: 20px;
+}
+.container{
+  background-color: #f2f2f2;
+  margin: auto;
+  border-style: double;
+  border-color: red;
+  border-radius: 5px;
+  padding-top: 5px;
+  height: 600px;
+
+}
+
+
+footer{
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+/**Author: Kali Campbell
+    Date: 6/29/2023
+    Topic: Responsive Travel**/
+
+
+body { background-color: aquamarine;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    }
+
+.heading p{
+    font-size: 25px;
+}
+
+section{
+display:inline-flex;
+flex-direction: column;
+width: 30%;
+height: 640px;
+border-style: inset;
+border-color: grey;
+border-radius: 5px;
+  background-color: rgb(229, 185, 103);
+  padding: 10px;
+}
+
+
+.container {
+    margin: auto;
+    width: 95%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+
+
+ul{ list-style: none;} 
+
+
+footer {clear:both; font-style: italic;}
+
+
+
