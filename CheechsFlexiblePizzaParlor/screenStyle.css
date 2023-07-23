@@ -39,7 +39,6 @@
 
     nav>ul>li{
         display: flex;
-        flex: column;
         width: 100%;
     }
 
